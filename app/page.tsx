@@ -9,10 +9,17 @@ export default function Home() {
   return (
     <div className="relative">
       <Navbar />
-      <Introduction />
+      <div
+        className="flex
+      flex-col ml-48 px-24"
+      >
+        <div>
+          <Introduction />
+          <AboutMe />
+        </div>
+      </div>
       <SocialBar />
       <EmailBar />
-      <AboutMe />
     </div>
   );
 }
