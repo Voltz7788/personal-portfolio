@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Icon } from "@iconify/react";
-import VerticalBar from "./Bar Components/VerticalBar";
+import VerticalBar from "./BarComponents/VerticalBar";
 
 export default function SocialBar() {
   return (
