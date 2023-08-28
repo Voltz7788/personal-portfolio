@@ -16,6 +16,12 @@ const config: Config = {
       colors: {
         bradBlue: "#0b192e",
       },
+      width: {
+        "0.25": "0.0625rem",
+      },
+      margin: {
+        "26": "6.5rem",
+      },
     },
   },
   plugins: [],
