@@ -15,6 +15,7 @@ const config: Config = {
       },
       colors: {
         bradBlue: "#0b192e",
+        bradProjectBlue: "#011f38",
       },
       width: {
         "0.25": "0.0625rem",

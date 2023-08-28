@@ -4,6 +4,7 @@ import Introduction from "./Components/Introduction";
 import SocialBar from "./Components/SocialBar";
 import EmailBar from "./Components/EmailBar";
 import AboutMe from "./Components/AboutMe";
+import Portfolio from "./Components/Portfolio";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <div>
           <Introduction />
           <AboutMe />
+          <Portfolio />
         </div>
       </div>
       <SocialBar />
