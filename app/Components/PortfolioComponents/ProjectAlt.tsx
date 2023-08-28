@@ -23,14 +23,14 @@ export default function ProjectAlt({ title }: props) {
         <p className="text-cyan-500 font-light text-sm">Featured Project</p>
         <h3 className="font-bold text-neutral-300 text-2xl">{title}</h3>
 
-        <p className="w-2/5 mt-20 bg-bradProjectBlue p-5 rounded-lg shadow-2xl text-neutral-400 absolute z-10">
+        <p className="w-2/5 mt-20 bg-bradProjectBlue p-7 rounded-lg shadow-2xl text-neutral-400 absolute z-10">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, nihil
           atque soluta est odio necessitatibus, error aliquid obcaecati id quia
           blanditiis officiis ex maxime rem explicabo cumque ipsa. Voluptate,
           exercitationem?
         </p>
 
-        <div className="text-neutral-400 text-sm mt-48 flex gap-4">
+        <div className="text-neutral-400 text-sm mt-52 flex gap-4">
           <p>NextJS</p>
           <p>Tailwind</p>
         </div>

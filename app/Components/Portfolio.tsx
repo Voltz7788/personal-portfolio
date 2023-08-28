@@ -15,8 +15,12 @@ export default function Portfolio() {
         </h2>
         <HorizontalBar />
       </div>
-      <Project title="This is my first project" />
-      <ProjectAlt title="Second project wow so cool" />
+      <Project title="First Project" />
+      <ProjectAlt title="Second Project" />
+      <Project title="Third Project" />
+      <ProjectAlt title="Fourth Project" />
+      <Project title="Fifth Project" />
+      <ProjectAlt title="Sixth Project" />
     </main>
   );
 }
