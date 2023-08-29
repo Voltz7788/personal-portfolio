@@ -13,7 +13,7 @@ export default function Home() {
       <Navbar />
       <div
         className="flex
-      flex-col ml-8 px-24 lg:ml-48"
+      flex-col -ml-10 md:ml-8 px-24 lg:ml-48"
       >
         <div>
           <Introduction />

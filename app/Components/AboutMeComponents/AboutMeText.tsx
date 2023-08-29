@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AboutMeText() {
   return (
-    <div className="flex flex-col gap-8 max-w-xl text-neutral-400 text-xl md:text-lg">
+    <div className="flex flex-col gap-8 max-w-xl text-neutral-400 text-md md:text-lg">
       <p className="">
         Hey there! My name is Brad and I build web experiences for the Minnesota
         Timberwolves & Lynx digital marketing team. I assume you want to know a
