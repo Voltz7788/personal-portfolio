@@ -3,9 +3,15 @@ import React from "react";
 import { Icon } from "@iconify/react";
 import VerticalBar from "./BarComponents/VerticalBar";
 
-export default function SocialBar() {
+interface props {
+  className?: string;
+}
+
+export default function SocialBar({ className }: props) {
   return (
-    <div className="fixed bottom-0 left-10 flex flex-col gap-8 items-center">
+    <div
+      className={`fixed bottom-0 left-10 flex flex-col gap-8 items-center ${className}`}
+    >
       <a
         href="https://github.com/Voltz7788"
         target="_blank"

@@ -23,6 +23,7 @@ const config: Config = {
       margin: {
         "26": "6.5rem",
         sectionGap: "32rem",
+        contactGap: "26rem",
       },
     },
   },

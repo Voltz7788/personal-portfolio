@@ -5,7 +5,7 @@ import ProjectAlt from "./PortfolioComponents/ProjectAlt";
 
 export default function Portfolio() {
   return (
-    <main className="mt-96">
+    <main id="work" className="mt-96">
       <div className="flex items-center gap-3">
         <h2 className="font-bold text-2xl text-neutral-400">
           <span className="text-cyan-500 text-xl align-text-top font-normal">

@@ -13,7 +13,7 @@ export default function Home() {
       <Navbar />
       <div
         className="flex
-      flex-col ml-48 px-24"
+      flex-col ml-8 px-24 lg:ml-48"
       >
         <div>
           <Introduction />
@@ -22,8 +22,8 @@ export default function Home() {
           <Contact />
         </div>
       </div>
-      <SocialBar />
-      <EmailBar />
+      <SocialBar className="invisible lg:visible" />
+      <EmailBar className="invisible lg:visible" />
     </div>
   );
 }
