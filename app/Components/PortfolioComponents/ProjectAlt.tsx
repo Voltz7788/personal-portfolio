@@ -10,8 +10,8 @@ interface props {
 
 export default function ProjectAlt({ title }: props) {
   return (
-    <section className="mt-10 mb-24 flex relative mr-64 justify-between">
-      <div className="bg-cyan-500 rounded-lg">
+    <section className="mt-10 mb-24 flex flex-col relative mr-64 justify-between 2xl:w-5/6 2xl:flex-row">
+      <div className="bg-cyan-500 rounded-lg h-1/2 mt-7 2xl:mt-0 2xl:w-2/3">
         <Image
           src={websiteImage}
           width={800}
@@ -23,7 +23,7 @@ export default function ProjectAlt({ title }: props) {
         <p className="text-cyan-500 font-light text-sm">Featured Project</p>
         <h3 className="font-bold text-neutral-300 text-2xl">{title}</h3>
 
-        <p className="w-2/5 mt-20 bg-bradProjectBlue p-7 rounded-lg shadow-2xl text-neutral-400 absolute z-10">
+        <p className="w-2/5 text-sm mt-20 bg-bradProjectBlue p-7 rounded-lg shadow-2xl text-neutral-400 absolute z-10">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, nihil
           atque soluta est odio necessitatibus, error aliquid obcaecati id quia
           blanditiis officiis ex maxime rem explicabo cumque ipsa. Voluptate,

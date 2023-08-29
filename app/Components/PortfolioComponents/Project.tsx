@@ -15,22 +15,22 @@ export default function Project({ title }: props) {
         <p className="text-cyan-500 font-light text-sm">Featured Project</p>
         <h3 className="font-bold text-neutral-300 text-2xl">{title}</h3>
 
-        <p className="w-full 2xl:w-5/12 text-sm md:text-base 2xl:text-sm mt-8 bg-bradProjectBlue p-7 rounded-lg shadow-2xl text-neutral-400 absolute z-10">
+        <p className="w-full 2xl:w-5/12 text-sm md:text-base 2xl:text-sm mt-8 bg-bradProjectBlue p-7 rounded-lg shadow-2xl text-neutral-400 2xl:absolute z-10">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, nihil
           atque soluta est odio necessitatibus, error aliquid obcaecati id quia
           blanditiis officiis ex maxime rem explicabo cumque ipsa. Voluptate,
           exercitationem?
         </p>
 
-        <div className="text-neutral-400 text-sm mt-48 2xl:mt-52 flex gap-4">
+        <div className="text-neutral-400 text-sm mt-5 2xl:mt-52 flex gap-4">
           <p>NextJS</p>
           <p>Tailwind</p>
         </div>
-        <div className="text-white mt-4 flex gap-3">
-          <a href="">
+        <div className="text-white mt-4 flex gap-3 ">
+          <a href="" className="hover:text-cyan-500">
             <Icon icon={"mingcute:github-line"} width={20} />
           </a>
-          <a href="">
+          <a href="" className="hover:text-cyan-500">
             <Icon icon={"majesticons:open-line"} width={20} />
           </a>
         </div>

@@ -15,12 +15,22 @@ export default function Portfolio() {
         </h2>
         <HorizontalBar />
       </div>
-      <Project title="First Project" />
-      <ProjectAlt title="Second Project" />
-      <Project title="Third Project" />
-      <ProjectAlt title="Fourth Project" />
-      <Project title="Fifth Project" />
-      <ProjectAlt title="Sixth Project" />
+      <div className="hidden 2xl:block">
+        <Project title="First Project" />
+        <ProjectAlt title="Second Project" />
+        <Project title="Third Project" />
+        <ProjectAlt title="Fourth Project" />
+        <Project title="Fifth Project" />
+        <ProjectAlt title="Sixth Project" />
+      </div>
+      <div className="block 2xl:hidden">
+        <Project title="First Project" />
+        <Project title="Second Project" />
+        <Project title="Third Project" />
+        <Project title="Fourth Project" />
+        <Project title="Fifth Project" />
+        <Project title="Sixth Project" />
+      </div>
     </main>
   );
 }
