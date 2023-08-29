@@ -10,11 +10,10 @@ interface props {
 
 export default function ProjectAlt({ title }: props) {
   return (
-    <section className="mt-10 mb-24 flex flex-col relative mr-64 justify-between 2xl:w-5/6 2xl:flex-row">
+    <section className="mt-10 mb-24 flex flex-col relative justify-between 2xl:w-5/6 2xl:flex-row">
       <div className="bg-cyan-500 rounded-lg h-1/2 mt-7 2xl:mt-0 2xl:w-2/3">
         <Image
           src={websiteImage}
-          width={800}
           alt=""
           className="ml-auto rounded-lg transition-transform hover:translate-x-2 hover:translate-y-2"
         />
