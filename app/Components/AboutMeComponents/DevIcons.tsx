@@ -1,0 +1,43 @@
+import React from "react";
+import Image from "next/image";
+
+// Images
+import TypescriptIcon from "../../../public/typescript-original.svg";
+import HTMLIcon from "../../../public/html5-original.svg";
+import CSSIcon from "../../../public/css3-original.svg";
+import JavascriptIcon from "../../../public/javascript-original.svg";
+import ReactIcon from "../../../public/react-original.svg";
+import NextjsIcon from "../../../public/nextjs-original.svg";
+import GitIcon from "../../../public/git-original.svg";
+import npmIcon from "../../../public/npm-original-wordmark.svg";
+import MongoDBIcon from "../../../public/mongodb-original-wordmark.svg";
+import WebpackIcon from "../../../public/webpack-original.svg";
+import TailwindCSSIcon from "../../../public/tailwindcss-plain.svg";
+import BashIcon from "../../../public/bash-original.svg";
+import UbuntuIcon from "../../../public/ubuntu-plain.svg";
+import VSCodeIcon from "../../../public/vscode-original.svg";
+
+export default function DevIcons() {
+  return (
+    <div className="md:w-3/4 flex mt-10 flex-wrap gap-14 w-full">
+      {/* <div className="flex "> */}
+      <Image src={TypescriptIcon} alt="Typescript" width={50}></Image>
+      <Image src={HTMLIcon} alt="HTML" width={50}></Image>
+      <Image src={CSSIcon} alt="CSS" width={50}></Image>
+      <Image src={JavascriptIcon} alt="Javascript" width={50}></Image>
+      <Image src={ReactIcon} alt="React" width={50}></Image>
+      <Image src={NextjsIcon} alt="Next.js" width={50}></Image>
+      <Image src={GitIcon} alt="Git" width={50}></Image>
+      {/* </div> */}
+      {/* <div className="flex justify-between mt-10"> */}
+      <Image src={npmIcon} alt="npm" width={50}></Image>
+      <Image src={MongoDBIcon} alt="MongoDB" width={50}></Image>
+      <Image src={WebpackIcon} alt="Webpack" width={50}></Image>
+      <Image src={TailwindCSSIcon} alt="TailwindCSS" width={50}></Image>
+      <Image src={BashIcon} alt="Bash" width={50}></Image>
+      <Image src={UbuntuIcon} alt="Ubuntu" width={50}></Image>
+      <Image src={VSCodeIcon} alt="VSCode" width={50}></Image>
+      {/* </div> */}
+    </div>
+  );
+}

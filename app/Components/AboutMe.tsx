@@ -3,13 +3,14 @@ import AboutMeText from "./AboutMeComponents/AboutMeText";
 import Image from "next/image";
 import yannisImage from "../../public/yannis-image.jpg";
 import HorizontalBar from "./BarComponents/HorizontalBar";
+import DevIcons from "./AboutMeComponents/DevIcons";
 
 export default function AboutMe() {
   return (
     <section id="about">
-      <div className="text-white mt-sectionGap flex items-center gap-3 ">
+      <div className="text-white mt-sectionGap flex items-center gap-3">
         <h2 className="font-bold text-xl md:text-2xl text-neutral-400">
-          <span className="text-cyan-500 text-xl align-text-top font-normal">
+          <span className="text-secondaryColor text-xl align-text-top font-normal">
             02.
           </span>{" "}
           About Me
@@ -25,6 +26,12 @@ export default function AboutMe() {
           height={500}
           className="rounded-xl object-contain"
         />
+      </div>
+      <div className="mt-10">
+        <h3 className="font-bold text-neutral-400 text-xl md:text-xl">
+          Languages and Tools
+        </h3>
+        <DevIcons />
       </div>
     </section>
   );

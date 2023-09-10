@@ -1,43 +1,68 @@
 "use client";
 import React from "react";
 import { Icon } from "@iconify/react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import websiteImage from "../../../public/website-demo.jpg";
 
 interface props {
   title: string;
+  image?: StaticImageData;
+  description?: string;
+  repoLink?: string;
+  liveLink?: string;
+  tools?: string[];
 }
 
-export default function ProjectAlt({ title }: props) {
+const loremIpsum =
+  "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, nihil atque soluta est odio necessitatibus, error aliquid obcaecati id quia blanditiis officiis ex maxime rem explicabo cumque ipsa. Voluptate, exercitationem?";
+
+export default function ProjectAlt({
+  title,
+  image = websiteImage,
+  description = loremIpsum,
+  repoLink = "",
+  liveLink = "",
+  tools = ["Next.js", "Tailwind"],
+}: props) {
   return (
     <section className="mt-10 mb-24 flex flex-col relative justify-between 2xl:w-5/6 2xl:flex-row">
-      <div className="bg-cyan-500 rounded-lg h-1/2 mt-7 2xl:mt-0 2xl:w-2/3">
-        <Image
-          src={websiteImage}
-          alt=""
-          className="ml-auto rounded-lg transition-transform hover:translate-x-2 hover:translate-y-2"
-        />
+      <div className="bg-secondaryColor rounded-lg h-1/2 mt-7 2xl:mt-0 2xl:w-2/3">
+        <a href={liveLink} target="_blank">
+          <Image
+            src={image}
+            alt=""
+            className="ml-auto rounded-lg transition-transform hover:translate-x-2 hover:translate-y-2"
+          />
+        </a>
       </div>
       <div className="flex flex-col items-end">
-        <p className="text-cyan-500 font-light text-sm">Featured Project</p>
+        <p className="text-secondaryColor font-light text-sm">
+          Featured Project
+        </p>
         <h3 className="font-bold text-neutral-300 text-2xl">{title}</h3>
 
-        <p className="w-2/5 text-sm mt-20 bg-bradProjectBlue p-7 rounded-lg shadow-2xl text-neutral-400 absolute z-10">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, nihil
-          atque soluta est odio necessitatibus, error aliquid obcaecati id quia
-          blanditiis officiis ex maxime rem explicabo cumque ipsa. Voluptate,
-          exercitationem?
+        <p className="w-2/5 text-sm mt-20 bg-bradProjectBlue p-7 rounded-lg shadow-2xl text-neutral-100 absolute z-10">
+          {description}
         </p>
 
         <div className="text-neutral-400 text-sm mt-52 flex gap-4">
-          <p>NextJS</p>
-          <p>Tailwind</p>
+          {tools.map((tool, index) => (
+            <p key={index}>{tool}</p>
+          ))}
         </div>
         <div className="text-white mt-4 flex gap-3">
-          <a href="">
+          <a
+            href={repoLink}
+            target="_blank"
+            className="hover:text-secondaryColor"
+          >
             <Icon icon={"mingcute:github-line"} width={20} />
           </a>
-          <a href="">
+          <a
+            href={liveLink}
+            target="_blank"
+            className="hover:text-secondaryColor"
+          >
             <Icon icon={"majesticons:open-line"} width={20} />
           </a>
         </div>

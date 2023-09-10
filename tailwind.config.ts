@@ -14,8 +14,9 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        bradBlue: "#0b192e",
-        bradProjectBlue: "#011f38",
+        bradBlue: "#04151f",
+        bradProjectBlue: "#173753",
+        secondaryColor: "#D56E4D",
       },
       width: {
         "0.25": "0.0625rem",

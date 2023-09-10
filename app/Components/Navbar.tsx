@@ -1,26 +1,77 @@
 "use client";
 import React from "react";
 import { Icon } from "@iconify/react";
+import { useState } from "react";
 
 export default function Navbar() {
+  const [selectedTab, setSelectedTab] = useState(1);
+
   return (
-    <nav className="flex text-white px-10 py-5 fixed w-full bg-bradBlue z-20">
-      <p className="text-4xl md:text-3xl text-cyan-500">Y</p>
-      <div className="ml-auto flex gap-14 font-extralight invisible md:visible">
-        <a href="#top">
-          <span className="text-cyan-500">01.</span> Home
+    <nav className="flex text-white px-5 md:px-10 pt-2 pb-1 fixed w-full items-center bg-bradBlue z-20">
+      <p className="text-4xl md:text-3xl text-secondaryColor">
+        <a href="#top">Y</a>
+      </p>
+      <div
+        className={`ml-auto flex gap-6 font-light invisible md:visible text-md`}
+      >
+        <a
+          href="#top"
+          onClick={() => setSelectedTab(1)}
+          className={`px-3 py-0.5 ${
+            selectedTab === 1 ? "bg-secondaryColor text-black rounded-full" : ""
+          }`}
+        >
+          <span
+            className={`${selectedTab === 1 ? "" : "text-secondaryColor "}`}
+          >
+            01.
+          </span>{" "}
+          Home
         </a>
-        <a href="#about">
-          <span className="text-cyan-500">02.</span> About
+        <a
+          href="#about"
+          onClick={() => setSelectedTab(2)}
+          className={`px-3 py-0.5 ${
+            selectedTab === 2 ? "bg-secondaryColor text-black rounded-full" : ""
+          }`}
+        >
+          <span
+            className={`${selectedTab === 2 ? "" : "text-secondaryColor "}`}
+          >
+            02.
+          </span>{" "}
+          About
         </a>
-        <a href="#work">
-          <span className="text-cyan-500">03.</span> Work
+        <a
+          href="#work"
+          onClick={() => setSelectedTab(3)}
+          className={`px-3 py-0.5 ${
+            selectedTab === 3 ? "bg-secondaryColor text-black rounded-full" : ""
+          }`}
+        >
+          <span
+            className={`${selectedTab === 3 ? "" : "text-secondaryColor "}`}
+          >
+            03.
+          </span>{" "}
+          Work
         </a>
-        <a href="#contact">
-          <span className="text-cyan-500">04.</span> Contact
+        <a
+          href="#contact"
+          onClick={() => setSelectedTab(4)}
+          className={`px-3 py-0.5 ${
+            selectedTab === 4 ? "bg-secondaryColor text-black rounded-full" : ""
+          }`}
+        >
+          <span
+            className={`${selectedTab === 4 ? "" : "text-secondaryColor "}`}
+          >
+            04.
+          </span>{" "}
+          Contact
         </a>
       </div>
-      <div className="md:invisible text-cyan-500">
+      <div className="md:invisible text-secondaryColor">
         <Icon icon={"iconamoon:menu-burger-horizontal"} width={32} />
       </div>
     </nav>
