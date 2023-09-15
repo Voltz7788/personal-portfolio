@@ -27,7 +27,7 @@ export default function Portfolio() {
           repoLink="https://github.com/Voltz7788/sylva-photography-portfolio"
           liveLink="https://sylva-photography-portfolio-voltz7788.vercel.app/"
           tools={["React", "Next.js", "Tailwind", "Typescript"]}
-          description="This site was commissioned by a professional photographer named Sylva Madu (he happens to be my brother). The site is complete with a masonary-style image portfolio and contact form."
+          description="This site was commissioned by my brother. He does photography professionally and wanted a website where he could showcase his work."
         />
         <ProjectAlt
           title="Etch-a-Sketch"
@@ -56,7 +56,7 @@ export default function Portfolio() {
           repoLink="https://github.com/Voltz7788/sylva-photography-portfolio"
           liveLink="https://sylva-photography-portfolio-voltz7788.vercel.app/"
           tools={["React", "Next.js", "Tailwind", "Typescript"]}
-          description="This site was commissioned by a professional photographer named Sylva Madu (he happens to be my brother). The site is complete with a masonary-style image portfolio and contact form."
+          description="This site was commissioned by my brother. He does photography professionally and wanted a website where he could showcase his work."
         />
         <Project
           title="Etch-a-Sketch"

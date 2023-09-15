@@ -16,28 +16,26 @@ import TailwindCSSIcon from "../../../public/tailwindcss-plain.svg";
 import BashIcon from "../../../public/bash-original.svg";
 import UbuntuIcon from "../../../public/ubuntu-plain.svg";
 import VSCodeIcon from "../../../public/vscode-original.svg";
+import JestIcon from "../../../public/jest-plain.svg";
 
 export default function DevIcons() {
   return (
     <div className="md:w-3/4 flex mt-10 flex-wrap gap-14 w-full">
-      {/* <div className="flex "> */}
-      <Image src={TypescriptIcon} alt="Typescript" width={50}></Image>
-      <Image src={HTMLIcon} alt="HTML" width={50}></Image>
-      <Image src={CSSIcon} alt="CSS" width={50}></Image>
-      <Image src={JavascriptIcon} alt="Javascript" width={50}></Image>
-      <Image src={ReactIcon} alt="React" width={50}></Image>
-      <Image src={NextjsIcon} alt="Next.js" width={50}></Image>
-      <Image src={GitIcon} alt="Git" width={50}></Image>
-      {/* </div> */}
-      {/* <div className="flex justify-between mt-10"> */}
-      <Image src={npmIcon} alt="npm" width={50}></Image>
-      <Image src={MongoDBIcon} alt="MongoDB" width={50}></Image>
-      <Image src={WebpackIcon} alt="Webpack" width={50}></Image>
-      <Image src={TailwindCSSIcon} alt="TailwindCSS" width={50}></Image>
-      <Image src={BashIcon} alt="Bash" width={50}></Image>
-      <Image src={UbuntuIcon} alt="Ubuntu" width={50}></Image>
-      <Image src={VSCodeIcon} alt="VSCode" width={50}></Image>
-      {/* </div> */}
+      <Image src={TypescriptIcon} alt="Typescript" width={50} />
+      <Image src={HTMLIcon} alt="HTML" width={50} />
+      <Image src={CSSIcon} alt="CSS" width={50} />
+      <Image src={JavascriptIcon} alt="Javascript" width={50} />
+      <Image src={ReactIcon} alt="React" width={50} />
+      <Image src={NextjsIcon} alt="Next.js" width={50} />
+      <Image src={GitIcon} alt="Git" width={50} />
+      <Image src={npmIcon} alt="npm" width={50} />
+      <Image src={MongoDBIcon} alt="MongoDB" width={50} />
+      <Image src={WebpackIcon} alt="Webpack" width={50} />
+      <Image src={TailwindCSSIcon} alt="TailwindCSS" width={50} />
+      <Image src={JestIcon} alt="Jest" width={50} />
+      <Image src={BashIcon} alt="Bash" width={50} />
+      <Image src={UbuntuIcon} alt="Ubuntu" width={50} />
+      <Image src={VSCodeIcon} alt="VSCode" width={50} />
     </div>
   );
 }
