@@ -17,6 +17,8 @@ import BashIcon from "../../../public/bash-original.svg";
 import UbuntuIcon from "../../../public/ubuntu-plain.svg";
 import VSCodeIcon from "../../../public/vscode-original.svg";
 import JestIcon from "../../../public/jest-plain.svg";
+import NodejsIcon from "../../../public/nodejs-original.svg";
+import ExpressjsIcon from "../../../public/express-original.svg";
 
 export default function DevIcons() {
   return (
@@ -32,6 +34,8 @@ export default function DevIcons() {
       <Image src={MongoDBIcon} alt="MongoDB" width={50} />
       <Image src={WebpackIcon} alt="Webpack" width={50} />
       <Image src={TailwindCSSIcon} alt="TailwindCSS" width={50} />
+      <Image src={NodejsIcon} alt="Node.js" width={50} />
+      <Image src={ExpressjsIcon} alt="Express.js" width={50} />
       <Image src={JestIcon} alt="Jest" width={50} />
       <Image src={BashIcon} alt="Bash" width={50} />
       <Image src={UbuntuIcon} alt="Ubuntu" width={50} />
